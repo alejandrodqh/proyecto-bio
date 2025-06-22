@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trivia Avanzada: Huesos del Cuerpo Humano</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <h1 class="main-title">🧠 Trivia Avanzada: Huesos del Cuerpo Humano 🦴</h1>
+
+  <div id="category-selection">
+    <h2>Selecciona una categoría:</h2>
+    <ul id="categories">
+      <li onclick="startQuiz('craneo')"><img src="img/imgcraneo.png"><span>Cráneo</span></li>
+      <li onclick="startQuiz('brazos')"><img src="img/imgbrazos.png"><span>Brazos</span></li>
+      <li onclick="startQuiz('piernas')"><img src="img/imgpiernas.png"><span>Piernas</span></li>
+      <li onclick="startQuiz('pies')"><img src="img/imgpie.png"><span>Pies</span></li>
+      <li onclick="startQuiz('columna_vertebral')"><img src="img/imgcolumna.png"><span>Columna Vertebral</span></li>
+      <li onclick="startQuiz('costillas')"><img src="img/imgcostillas.png"><span>Costillas</span></li>
+      <li onclick="startQuiz('manos')"><img src="img/imgmanos.png"><span>Manos</span></li>
+      <li onclick="startQuiz('pelvis')"><img src="img/imgpelvis.png"><span>Pelvis</span></li>
+    </ul>
+  </div>
+
+  <div id="quiz-container" class="hidden">
+    <div class="quiz-fullscreen">
+      <h2 id="category-title"></h2>
+      <img id="category-image" src="" alt="Imagen de categoría" />
+      <div id="score-bar">Puntaje: <span id="score">0</span> | ⏳ Tiempo: <span id="time">10</span>s</div>
+      <div id="question-container">
+        <p id="question-text"></p>
+        <ul id="answer-options"></ul>
+      </div>
+      <div class="button-group">
+        <button id="next-button" class="hidden">Siguiente Pregunta</button>
+        <button id="change-category-button" class="hidden">Regresar al Menú</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
